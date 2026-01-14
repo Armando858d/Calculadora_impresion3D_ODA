@@ -1,1 +1,37 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>cotizador impresion 3d</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>cotizador impresion 3d</h1>
+
+  <div class="card">
+    <label>gramos usados</label>
+    <input type="number" id="gramos" placeholder="ej. 120">
+
+    <label>horas de impresion</label>
+    <input type="number" id="horas" placeholder="ej. 5">
+
+    <label>precio por kilo ($)</label>
+    <input type="number" id="precioKilo" value="400">
+
+    <label>costo por hora ($)</label>
+    <input type="number" id="costoHora" value="30">
+
+    <label>margen de ganancia (%)</label>
+    <input type="number" id="margen" value="30">
+
+    <button onclick="calcular()">calcular</button>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
